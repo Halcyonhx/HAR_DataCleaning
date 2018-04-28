@@ -1,0 +1,25 @@
+---
+title: "README"
+author: "H.Liu"
+date: "28 4 2018"
+output: html_document
+---
+
+# run_analysis.R
+
+This repo was created for the "Getting and Cleaning Data project".
+
+1. Input data
+Input data was downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+Detailed explaination regarding the input data can refer to http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+2. Source "run_analysis.R" into your working directory
+3. Generated tidy data file "tidyMean.txt" lists 79 measured feature variables' mean value corresponding to each activity of each person. More info refers to CodeBook
+
+
+## Code explaination
+
+1. The code firstly generates train and test set by combining original data set. 
+2. Merges the train and test data based on activityID. 
+3. Extract mean and standard deviation of each measurement
+4. Calculate mean for each activity of each subject
+5. write the result into the table "tidyMean.txt"
